@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>The World of Proxy</title>
+
+<link rel="stylesheet" href="index.css" >
+
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+
+
+p.color {
+	color: #8C2121;
+}
+
+
+
+
+p {
+	color: #000000;
+}
+	
+
+
+
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 3670px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+	background-color: #7C7A76;
+	border: solid #565252 8px;
+	border-radius: 15px;	
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 300px;
+	top: 160px;
+}
+
+
+
+
+#AllProjects a:link {
+	color: #81D3F9;
+	text-decoration: none;
+}
+
+
+
+
+#AllProjects a:visited {
+	color: #81D3F9;
+}
+
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
+
+
+#chain {
+	position: relative;
+	width: 700px;
+	top: 10px;
+	left: 30px;
+}
+
+
+
+iframe {
+	position: relative;
+	width: 650px;
+	left: 0px;
+}
+
+
+
+
+
+</style>
+
+
+
+<!--INTERNAL CSS-->
+
+
+
+</head>
+
+
+<body>
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+
+
+
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="../view-projects.html">View Projects</a></li>
+
+
+<li class="menubuttons"><a href="../contact.html">Contact Me</a></li>
+
+</ul>
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/GitHub.png" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+
+
+<div id="project">
+<h2>The World of Proxy</h2>
+
+</div><!--project-->
+
+
+
+<div id="AllProjects">
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Today I learned about proxychains and how to use them to remain anonymous online.</p>
+
+
+
+
+
+<div id="chain">
+
+<p><img src="images/chain.jpg" alt="Future Learn" width="640" height="452" /></p>
+
+</div><!--Chain-->
+
+
+
+
+<p>I learned how to access the proxychain file in Kali Linux by typing the following command:</p>
+
+<br>
+
+<p class="color">nano /etc/proxychains.conf</p>
+
+<br>
+
+<p>Once inside the file I could edit it with nano (a text editor). I learned about three different types of proxychains which are:</p>
+
+<br>
+
+<ol>
+<li>Dynamic Chain</li>
+<li>Strict Chain</li>
+<li>Random Chain</li>
+</ol>
+
+<br>
+
+<p>Dynamic chains are the preferable option because from what I understand it is the most stable. Using dynamic gives you the ability to go from ABCD to your desired destination without adhering to a specific order like strict chains do. If you have a strict chain you will only be able to access sites on the internet by going through ABCD in that specific order. If B is down then you're stuck and the proxychain cannot continue.</p>
+
+<p>However, with dynamic chains, if B is down it would go A, skip over B, and then go on to C and D and it will have no problems. Even if C was down as well it would go A and D with no problems and will reach the desired destination. As long as one single proxy is functional it's going to work without any specific order attached to it. Cool huh?</p>
+
+<p>I also thought that random chains were pretty interesting as well. With random chains you can specify a list of IP addresses and it will randomly choose proxies from that list in a random order. Each time we use this option these proxychains will look very different to your intended target. In turn it will make it that much harder to track our traffic from where it orginated from. Nice huh?</p>
+
+<p>I learned about the importance of using socks5 proxies over socks4 and HTTP. Socks5 has the ability to anonymize all sorts of traffic over the other two options. HTTP is not really safe and socks4 doesn't support a lot of options. So whenever and however you can, always try to choose socks5.</p>
+
+<p>I also learned about the importance of using Proxy DNS Requests. It is very, VERY important NOT to have any DNS leaks. Even though someone can't get your particular IP address they can get the IP address of the DNS server that you are using and then track you down. That's a big no-no!  You do not want that happening because your local DNS server will be discovered and that information can be used in order to figure out your personal IP address. And then once that's discovered then your physical address will be discovered as well and...well...you get the idea.</p>
+
+<p>You should definitely use a proxy DNS. It might slow you down a bit but without it you will be practically wide open and NOT anonymous. It will be a matter of time before "they find you." This reminds me of a clip from the movie "The Last of the Mohicans" where Hawkeye tells Cora Munro the following:</p>
+
+
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/GpWWCTVbFfM" frameborder="0" allowfullscreen></iframe>
+
+<p>Hahahahaha! Sorry...I couldn't help myself with that one. Can you picture the FBI or a Cyber Crime Unit saying that?</p>
+
+<p>So using the nano text editor to edit the proxychain file I make sure to use one of the three chain options discussed above by deleting or un-deleting the hash sign which looks like this "#". Your computer system will ignore the chain if it has a hash before it and it will take it into consideration if it does NOT have a hash before it. For example:</p>
+
+<br>
+
+
+
+<p class="color">#dynamic chain-------your computer will ignore this.</p>
+
+<p class="color">dynamic chain--------your computer will consider this.</p>
+
+<br>
+
+<p>Once I added those changes I save the file by pressing the keys "CTRL and the letter O" at the same time. Then I exit out of the nano text editor by pressing the "CTRL + X" keys and I'm back to my regular Kali Linux screen.</p>
+
+<p> Pretty neat huh? Since I've accomplished what I set out to do today and I learned something interesting about proxychains you know what that means...it's time for the Woohoo Dance!</p> 
+
+
+<div id="darth">
+
+<p><img src="images/darth.gif" alt="Darth Vader Dance" width="258" height="280" /></p>
+
+</div><!--darth-->
+
+
+
+
+<br>
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+
+</div><!--backtotop-->
+
+
+
+
+</div><!--AllProjects-->
+
+
+
+
+
+
+</div><!--Outer Container-->
+
+
+
+
+</body>
+
+</html>
