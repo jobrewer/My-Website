@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Time To Bake Me Some Pie</title>
+
+
+
+
+
+<link rel="stylesheet" href="index.css" >
+
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+
+
+p.color {
+	color: #6A1C75;
+}
+
+
+
+
+p {
+	color: #000000;
+}
+
+
+
+
+
+
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 4800px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+	background-color: #7C7A76;
+	border: solid #565252 8px;
+	border-radius: 15px;	
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 300px;
+	top: 160px;
+}
+
+
+
+
+#AllProjects a:link {
+	color: #81D3F9;
+	text-decoration: none;
+}
+
+
+
+#AllProjects a:visited {
+	color: #81D3F9;
+}
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
+
+#pigirl {
+	position: relative;
+	width: 700px;
+	padding-left: 80px;
+}
+
+
+
+
+
+
+
+#pikit {
+	position: relative;
+	width: 700px;
+	padding-left: 80px;
+}
+
+
+
+
+
+
+#piwires {
+	position: relative;
+	width: 700px;
+	padding-left: 80px;
+}
+
+
+
+
+
+
+#piscreen1 {
+	position: relative;
+	width: 700px;
+	padding-left: 80px;
+}
+
+
+
+
+
+#piscreen2 {
+	position: relative;
+	width: 700px;
+	padding-left: 80px;
+}
+
+
+
+
+
+
+#minime {
+	position: relative;
+	width: 700px;
+	padding-left: 220px;
+}
+
+
+
+
+
+
+</style>
+
+
+
+<!--INTERNAL CSS-->
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+
+
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="../view-projects.html">View Projects</a></li>
+
+
+<li class="menubuttons"><a href="../contact.html">Contact Me</a></li>
+
+</ul>
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/GitHub.png" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+
+
+<div id="project">
+<h2>Time To Bake Me Some Pie</h2>
+
+</div><!--project-->
+
+
+
+<div id="AllProjects">
+
+
+
+
+<p>My Raspberry Pi 3 Model B has finally arrived! It's time to see what all the fuss over the Pi is about!</p>
+
+
+
+
+<div id="pigirl">
+
+<p><img src="images/pi-girl.jpg" alt="Raspberry Pi Girl" width="720" height="475" /></p>
+
+</div><!--pigirl-->
+
+
+
+<p>I ordered it through Amazon and it came wrapped up like this:</p>
+
+
+
+
+<div id="pikit">
+
+<p><img src="images/kit.jpg" alt="Raspberry Pi Kit" width="720" height="650" /></p>
+
+</div><!--pikit-->
+
+
+
+<p>I followed the instructions from the <a href="https://www.raspberrypi.org/" target="_blank">raspberrypi.org website</a> and learned the following the hard way:</p>
+
+
+<br>
+
+
+<ol>
+<li>It is recommended that you format your SD card before copying the NOOBS file or Raspbian on it.</li>
+
+<br>
+
+
+<li>If you decide to use an SD card that is 32GB and higher it is considered an SDXC card and it has to be formatted differently otherwise you could run into some problems with the Raspberry Pi during setup. I never knew this and after some research I found out that the reason for this is because the SD cards that are 32GB and higher use a format that is unsupported by the Raspberry Pi. This means that by default many SD card formatters will format SD cards below 32GB as FAT32 and SD cards that are above 32GB are formatted as exFAT which is a format that is NOT supported by the Raspberry Pi.</li>
+
+
+<br>
+
+
+<li>The right HDMI cable is so important!  I had an HDMI cable with a VGA Converter Adapter hooked up to my monitor and my Pi and it would not work!  It took me a long time researching online to realize that even though the HDMI cable with VGA Converter Adapter looked like it was in good condition that perhaps it was better just to have a straight HDMI cable connection. From what I understood this meant having a cable where the signal can flow without any interruption verses a converter that needs to convert the signal first before transmitting it through. And when I used a straight HDMI cable it finally worked!</li>
+
+
+</ol>
+
+
+<br>
+
+
+<p>First things first though. I plugged the following on the Raspberry Pi in the following order. Make sure that your monitor cable is on though! I learned that the hard way too.</p>
+
+
+<ol>
+
+
+<li>Keyboard to USB port</li>
+
+<br>
+
+<li>Mouse to USB port</li>
+
+<br>
+
+<li>Monitor cable to HDMI port</li>
+
+<br>
+
+<li>Rasberry Pi power cable to USB port</li>
+
+</ol>
+
+
+
+
+<div id="piwires">
+
+<p><img src="images/pi-wires.jpg" alt="Raspberry Pi wires" width="720" height="475" /></p>
+
+</div><!--piwires-->
+
+
+
+
+<p>And if you did it right you should see this screen come up:</p>
+
+
+
+<div id="piscreen1">
+
+<p><img src="images/pi-screen1.jpg" alt="Raspberry Pi screen" width="720" height="475" /></p>
+
+</div><!--piscreen1-->
+
+
+
+
+<p>Followed by this beautiful screen. This is when you know you successfully installed your chosen operating system (in my case it was Raspbian).</p>
+
+
+
+
+<div id="piscreen2">
+
+<p><img src="images/pi-screen2.jpg" alt="Raspberry Pi screen" width="720" height="475" /></p>
+
+</div><!--piscreen2-->
+
+
+  
+<p>Now that my Raspberry Pi is up and running, my first Pi recipe is going to be...wait for it...wait for it...setting up my very own FTP server!  I'll sure be learning a whole lot through that one!</p>
+
+
+<p>Since I've successfully installed the Raspberry Pi and it's officially up and running you know what that means right? It's time for the Woohoo Dance!</p>
+
+
+
+
+
+<div id="minime">
+
+<p><img src="images/mini-me.gif" alt="Dr. Evil and Mini-Me" width="400" height="262" /></p>
+
+</div><!--minime-->
+
+  
+
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+</div><!--backtotop-->
+
+
+
+
+</div><!--AllProjects-->
+
+
+
+
+
+
+</div><!--Outer Container-->
+
+
+
+</body>
+
+</html>
+
