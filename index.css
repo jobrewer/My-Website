@@ -1,13 +1,24 @@
-/*****This is the index.css code for the index.html page on my Portfolio Website*****/
+/*****This is the index.css code for the index.html page for my Portfolio Website*****/
 
 
 body {
-  background-image: url(images/fashion.jpg);
+  /*background-image: url(images/fashion2.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1500px;
+  height: 1000px;
   margin: 0 auto;
-  width: 1024px;
+  width: 960px;
+}
+
+
+
+
+
+#empty {
+	position: relative;
+	width: 1000px;
+	top: -30px;
+	left: -290px;	
 }
 
 
@@ -15,7 +26,7 @@ body {
 
 
 p {
-	color: #ffffff;
+	color: #000000;
 }
 
 
@@ -24,7 +35,7 @@ p {
 h1 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 5em;
-	color: #000000;
+	color: #ffffff;
 	font-weight: bold;
 }
 
@@ -81,6 +92,48 @@ h1 {
 
 
 
+/********LISTS OL/UL*********************/
+
+
+
+#todo {
+	color: #000000;
+}
+
+
+/*****************************************/
+
+
+
+
+
+
+
+
+
+/*********************************************/
+
+
+#backtotop a:link {
+	color: #185D8E;
+	text-decoration: none;
+}
+
+
+
+#backtotop a:visited {
+	color: #185D8E;
+}
+
+
+
+#backtotop a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
 
 
 
@@ -96,10 +149,10 @@ h1 {
 	font-size: 2em;
 	font-family: 'Amatic SC', cursive;
 	text-align: center;
-	color: #FFFFFF;
+	color: #000000;
 	position: absolute;
-	left: -180px;
-	top: 150px;	
+	left: 300px;
+	top: 30px;	
 	font-weight: bold;
 }
 
@@ -126,7 +179,7 @@ h1 {
 
 
 #menu a:link {
-	color: #81D3F9;
+	color: #185D8E;
 	text-decoration: none;
 }
 
@@ -134,7 +187,7 @@ h1 {
 
 
 #menu a:visited {
-	color: #81D3F9;
+	color: #185D8E;
 }
 
 
@@ -149,10 +202,24 @@ h1 {
 
 li.menubuttons {
 	width: 200px;
-	background-color: #565252;
+	/*background-color: #565252;*/
     border-radius: 15px;
     margin: 3px;
 }
+
+
+
+
+
+
+#Git {
+	position: relative;
+	width: 100px;
+	top: -90px;
+	left: 500px;
+	margin-left: 10px;
+}
+
 
 
 /************************************/
@@ -166,18 +233,17 @@ li.menubuttons {
 
 #MainParagraph {
 	position: relative;
-	width: 1080px;
+	width: 960px;
 	height: 700px;
 	font-size: 1.4em;
 	font-family: Verdana, Geneva, Arial, Sans-serif;
 	text-align: left;
-	padding: 10px;
+	padding: 20px;
 	left: 0px;
-	top: 180px;
-    background-color: #7C7A76;
-	border: solid #565252 8px;
-	border-radius: 15px;		
-}
+	margin: 20px;
+	top: 540px;
+	color: #000000;
+    
 
 
 
@@ -193,48 +259,18 @@ li.menubuttons {
 
 
 
-/********LISTS OL/UL*********************/
-
-
-
-#todo {
-	color: #ffffff;
-}
-
-
-/*****************************************/
 
 
 
 
 
-#backtotop a:link {
-	color: #81D3F9;
-	text-decoration: none;
-}
-
-
-
-#backtotop a:visited {
-	color: #81D3F9;
-}
-
-
-
-#backtotop a:hover {
-	color: #FFA3D4;
-}
 
 
 
 
 
-#Git {
-	position: relative;
-	width: 100px;
-	top: -110px;
-	left: 500px;
-	margin-left: 10px;
-}
+
+
+
 
 
