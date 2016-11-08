@@ -1,0 +1,270 @@
+<!--This is the fun-alerts.html code for my Portfolio Websie-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Jo DeMarco Personal Portfolio">
+
+
+
+
+
+<title>Fun Alerts</title>
+
+
+
+
+
+<link rel="stylesheet" href="index.css" >
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 800px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 800px;
+	top: 160px;
+}
+
+
+
+
+#AllProjects a:link {
+	color: #185D8E;
+	text-decoration: none;
+}
+
+
+
+#AllProjects a:visited {
+	color: #185D8E;
+}
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
+
+#sinora {
+	position: relative;
+	width: 700px;
+	padding-left: 180px;
+}
+
+
+
+
+
+
+</style>
+
+
+
+<!--INTERNAL CSS-->
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+
+
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="../view-projects.html">View Projects</a></li>
+
+
+<li class="menubuttons"><a href="../contact.html">Contact Me</a></li>
+
+</ul>
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/github.gif" width="51" height="54" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+
+
+<div id="project">
+<h2>Fun Alerts</h2>
+
+</div><!--project-->
+
+
+
+<div id="AllProjects">
+
+
+
+
+<p>Today I learned about using JavaScript to create custom alerts and prompts. I wanted to go beyond the typical "Hello World" alert and do something a little bit different.</p>
+
+<p>The JavaScript alert I used created a popup window that displayed the custom message I wanted to display. And the JavaScript prompt alert triggered a popup window asking the user interacting with it a question and then prompting the user to respond.</p>
+
+<p>The script was very easy and fun to do. Since I created my first JavaScript script you know what that means right? It's time for the Woohoo Dance!</p>
+
+
+<div id="sinora">
+
+<p><img src="images/sinora.gif" alt="Beetlejuice song from the movie" width="480" height="278" /></p>
+
+</div><!--sinora-->
+
+  
+
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+</div><!--backtotop-->
+
+
+
+
+</div><!--AllProjects-->
+
+
+
+
+
+
+</div><!--Outer Container-->
+
+
+
+<script >
+
+
+alert("Are you ready for a quick game?");
+
+var name = prompt("Hey...what is your name?");
+alert("Your name is " + name + ".");
+
+var color = prompt("Now what is your favorite color?");
+alert(color + " is your favorite color.");
+
+var number = prompt("What is your favorite number?");
+alert("Your favorite number is " + number + ".");
+
+alert("There's a person on this planet named " + name + " whose favorite color is " + color + " and who likes the number " + number + ". Pretty cool huh?");
+
+alert("Let's play another game...");
+
+var food = prompt("What is your favorite food?");
+alert("Your favorite food is " + food + ".");
+
+var movie = prompt("What is your favorite movie?");
+alert("Your favorite movie is " + movie + ".");
+
+alert("You love to binge on " + food + " as you watch " + movie + ".");
+
+alert("And tha's the end of the game...thanks for playing!");
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
