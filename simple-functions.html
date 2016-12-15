@@ -1,0 +1,432 @@
+<!--This is the adventure-time.html code for my Portfolio Website-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Jo DeMarco Personal Portfolio">
+
+
+
+
+
+<title>Fun With Simple Functions</title>
+
+
+
+
+
+<link rel="stylesheet" href="index.css" >
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 900px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 800px;
+	top: 160px;
+}
+
+
+
+
+#AllProjects a:link {
+	color: #185D8E;
+	text-decoration: none;
+}
+
+
+
+#AllProjects a:visited {
+	color: #185D8E;
+}
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+#site {
+	position: relative;
+	width: 700px;
+	padding-left: 180px;
+}
+
+
+
+p.villain1function {
+	color: #FFA3D4;
+}
+
+
+
+
+#villainalert1 {
+	position: relative;
+	width: 700px;
+	padding-left: 100px;
+}
+
+
+
+
+#villainalert2 {
+	position: relative;
+	width: 700px;
+	padding-left: 100px;
+}
+
+
+
+
+.tombraider {
+	position: relative;
+	width: 700px;
+	padding-left: 130px;
+}
+
+
+
+
+
+#laracode1 {
+	position: relative;
+	width: 700px;
+	padding-left: 100px;
+}
+
+
+
+
+
+#laracode2 {
+	position: relative;
+	width: 700px;
+	padding-left: 100px;
+}
+
+
+
+
+
+#girldance {
+	position: relative;
+	width: 700px;
+	padding-left: 180px;
+}
+
+
+
+
+
+
+</style>
+
+
+
+<!--INTERNAL CSS-->
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+
+
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="../view-projects.html">View Projects</a></li>
+
+
+<li class="menubuttons"><a href="../contact.html">Contact Me</a></li>
+
+</ul>
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/github.gif" width="51" height="54" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+
+
+<div id="project">
+<h2>Fun With Simple Functions</h2>
+
+</div><!--project-->
+
+
+
+<div id="AllProjects">
+
+
+
+
+<p>Wow...I can't believe I'm actually starting to understand what a function in JavaScript is and how it operates. I thought there was no way I would fully understand it but surprise surprise I actually understood it!</p>
+
+<p>I found this amazing site that for some strange reason helps me to "connect the dots" and help it click in my brain. If you're also learning JavaScript like I am this is a great site to learn it from:</p>
+
+<div id="site">
+
+<p><a href="https://www.kirupa.com/html5/learn_javascript.htm" target="_blank"><img src="images/kirupa.png" alt="Kirupa Website" width="484" height="264" /></a></p>
+
+</div><!--site-->
+
+
+<p>Now once I understood how functions are used and how they work (at the very least a simple rudimentary understanding of it) I decided to create my own code using what I understood about JavaScript functions for two reasons:</p>
+
+
+<ol>
+<li>So I can practice through coding repetition how that particular function with arguments is written.</li> 
+
+<br>
+
+<li>So I can create something simple using what I understood so far without Googling for answers. I wanted to see if I could try to figure it out without retorting to finding the answers online. I wanted to use my own brain first in trying to figure it out. If I couldn't figure it out after getting stuck for a long time on it then I promised myself to Google it so that I could understand where I went wrong and what important bits of code I was missing. But first my strategy was to try to figure it out first using just my brain and what I have just learned so far on JavaScript functions.</li>
+
+
+<br>
+
+<p>I decided to create a very simple alert with a function. This is how it looks like:</p>
+
+
+
+
+<div id="villainalert1">
+
+<p><img src="images/villainaddition.png" alt="Coding JavaScript Function example" width="601" height="647" /></p>
+
+</div><!--villainalert1-->
+
+
+<p>The only problem with this was when I did the callback function. Notice the alert within the function where it says:</p>
+
+
+<p class = "villain1function">alert("There are a total of " + villain + heroes + " villains and heroes that attended this years's villain convention.");</p>
+
+
+<p>And do you see the callback functions bellow? All it did was add the first number to the second number together. For example like this:</p>
+
+
+
+<ul>
+<li><p class = "villain1function">villainConvention(7, 4); (74 is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(8, 3); (83 is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(100, 4); (1004 is the answer)</li></p>
+</ul>
+
+
+<p>The same thing happened when instead of the "addition symbol" I used the multiplication symbol. It just multiplied the first number to the second. Like this:</p>
+
+
+<ul>
+<li><p class = "villain1function">villainConvention(7, 4); (28 is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(8, 3); (24 is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(100, 4); (400 is the answer)</li></p>
+</ul>
+
+
+<p>Okay...so for some reason it's not doing what I am asking it to do. Actually, let me rephrase that. It's doing EXACTLY what I asked it to do. But not what I WANTED it to do. I wanted to figure out how many total villains showed up at this famous evil convention and I also wanted to know how many heroes also showed up at this convention to ruin the fun for the villains. I don't want to add both numbers together (either through addition or multiplication). I want to get two separate headcounts! Not a combination of both of them! This is just not going to work.</p>
+
+<p>So I started thinking...what if instead of me putting together both the "villain and heroes" argument by using addition and or multiplication to try to get some kind of response I instead separate the arguments without any math involved? So that way the callback function arguments work the way I want it to? And this is exactly what I did. Just like this:</p> 
+
+
+
+<div id="villainalert2">
+
+<p><img src="images/villain-correct-example.png" alt="Coding JavaScript Function example" width="601" height="647" /></p>
+
+</div><!--villainalert2-->
+
+
+
+<p>And guess what? It worked!!! It worked just like I wanted it to! So instead of the callback argument numbers adding and or multiplying each other they are now simply just replacing the name of the argument with the correct values. For example:</p>
+
+
+
+
+<ul>
+<li><p class = "villain1function">villainConvention(7, 4); (7 villains and 4 heroes is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(8, 3); (8 villains and 3 heroes is the answer)</li></p>
+<li><p class = "villain1function">villainConvention(100, 4); (100 villains and 4 heroes is the answer)</li></p>
+</ul>
+
+
+<p>Yes!  This is exactly what I originally wanted it to do. And I figured it out all on my own just by playing around with the code and testing it out on my browser until I got it to do what I wanted it to do. It felt awesome when I figured it out all on my own!</p>
+
+
+<p>I also decided to take it a bit further and see if I could make my small little coding project a little bit more complicated using everything that I had just learned. I love video games and one of my favorite games on my Xbox is "Tomb Raider A Survivor is Born" and the sequel "Rise of the Tomb Raider."</p>
+
+
+
+<p class = "tombraider">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nFBrgeSjj-0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/twjNaXJvZfk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xV9XyNu6AFU" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3uMALBoIZYk" frameborder="0" allowfullscreen></iframe>
+
+</p>
+
+
+<p>Here is the code I used to make this JavaScript function work:</p>
+
+
+<div id="laracode1">
+
+<p><img src="images/lara1example.png" alt="Lara Croft coding example" width="601" height="647" /></p>
+
+</div><!--laracode1-->
+
+
+
+<div id="laracode2">
+
+<p><img src="images/lara2example.png" alt="Lara Croft coding example" width="601" height="647" /></p>
+
+</div><!--laracode2-->
+
+
+
+
+<p>And it worked! The JavaScript function code did exactly what I wanted it to do! I know it's a very simple JavaScript function but the fact is that once I understood the logic of how a basic function works I was able to use my creativity to create something with it. And I did!</p>
+
+<p>Now if these arguments were numbers that I wanted to add and or multiply instead of having just phrases I then wouldn't have needed to declare all these variables like I did to all these phrases. All I would do is simply put the numbers I wanted to add or multiply in the callback function and call it a day like I did with my villain convention code. I didn't have to declare any variables in that villain convention code at all. But it seems that things get a lot more complicated when you want to callback phrases instead of numbers.</p>
+
+<p>I know there are probably other ways of coding this example that I have not discovered yet. But...at least I can say that what I did worked for me! And I'm looking very much forward to learning other methods that would come to the same conclusion or an even faster conclusion.</p>
+
+<p>Since I learned how a simple JavaScript function works and I was able to create a few interesting projects with it, you know what that means right? You know it! It's time for the Woohoo Dance!</p>
+
+
+
+
+<div id="girldance">
+
+<p><img src="images/hit-in-head-dancing.gif" alt="Girl hit on head while dancing" width="380" height="305" /></p>
+
+</div><!--girldance-->
+
+  
+
+
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+</div><!--backtotop-->
+
+
+
+
+</div><!--AllProjects-->
+
+
+
+
+
+
+</div><!--Outer Container-->
+
+
+
+
+
+</body>
+
+</html>
+
