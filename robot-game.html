@@ -1,0 +1,626 @@
+<!--This is the simple-functions.html code for my Portfolio Website-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Jo DeMarco Personal Portfolio">
+
+
+
+<title>Robot Game</title>
+
+
+<link rel="stylesheet" href="index.css" >
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 1170px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 800px;
+	top: 160px;
+}
+
+
+
+#project2 {
+	position: relative;
+	width: 800px;
+	top: 0px;
+	left:-50px;
+}
+
+
+.secondH2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 3em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#AllProjects a:link {
+	color: #185D8E;
+	text-decoration: none;
+}
+
+
+
+#AllProjects a:visited {
+	color: #185D8E;
+}
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
+
+#MainParagraph {
+	position: relative;
+	width: 800px;
+	top: 140px;
+}
+
+
+
+
+
+#Robot1 {
+	position: relative;
+	width: 700px;
+	padding-left: -100px;
+}
+
+
+#Robot2 {
+	position: relative;
+	width: 700px;
+	top: -235px;
+	padding-left: 260px;
+}
+
+
+
+#Robot3 {
+	position: relative;
+	width: 700px;
+	top: -470px;
+	padding-left: 520px;
+}
+
+
+
+
+#w3schools {
+	position: relative;
+	width: 700px;
+	padding-left: 180px;
+}
+
+
+
+#twodancingrobots {
+	position: relative;
+	width: 700px;
+	padding-left: 180px;
+}
+
+
+
+
+
+/**********************************/
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+
+
+</style>
+
+<!--INTERNAL CSS-->
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="/view-projects.html">View Projects</a></li>
+
+
+
+<li class="menubuttons"><a href="/contact.html">Contact Me</a></li>
+
+
+
+</ul>
+
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/github.gif" width="51" height="54" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+
+<div id="project">
+<h2>Robot Game</h2>
+
+</div><!--project-->
+
+
+
+
+
+<!--MainParagraph Div-->
+
+<a class="noDecoration" href="#">
+
+<div id="MainParagraph">
+
+
+
+
+<!--Paragraph Not be a link-->
+<a name="WhateverNameYouWant">
+
+
+
+
+
+<p>Can you guess which of these 3 Robots is going to go all evil and take over the world?</p>
+
+<p>If you choose wisely you win!</p>
+
+<p>If you choose wrong you'll be responsible for the extinction of the entire human race!</p>
+
+<br>
+
+
+
+
+<!--MY EXPERIMENTAL CODE 1-->
+
+
+
+ <div class="row">
+  <div class="column">
+    <img src="images/robot1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">Robot 1
+  </div>
+
+
+
+  <div class="column">
+    <img src="images/robot2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">Robot 2
+  </div>
+
+
+
+  <div class="column">
+    <img src="images/robot3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">Robot 3
+  </div>
+ 
+</div>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      
+        <img src="images/kidmanshocked.gif" style="width:100%">You just doomed the entire human race!
+    </div>
+
+
+
+    <div class="mySlides">
+      
+        <img src="images/movie-joker.gif" style="width:60%">You did it! You saved our species! Yay!
+    </div>
+
+
+
+
+    <div class="mySlides">
+      
+        <img src="images/shocked.gif" style="width:100%">What is wrong with you! Why would you pick the robot that looks evil on purpose!
+    </div>
+
+    
+
+    
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+    
+  </div>
+</div>
+
+
+
+<!--MY EXPERIMENTAL CODE 1-->
+
+
+<br>
+<br>
+<br>
+
+
+
+<div id="project2">
+
+<h2 class="secondH2">How I Did It</h2>
+
+</div>
+
+
+
+
+<p>So how did I create this? I will tell you it was NOT easy! Today I learned a valuable lesson. Even with the little bit of JavaScript that I managed to learn so far it's not nearly enough to create something awesome.</p>
+
+<p>I had an idea in my mind of what I wanted to create. But with my limited understanding of JavaScript there was no way I was going to implement it.</p>
+
+<p>Okay so what now? What do I do? What's another way I could learn and implement my vision of what I wanted to create? With this in mind I learned of two things one can do when they come face to face with this kind of scenario:</p>
+
+<br>
+
+<ol>
+
+<li>You can see if you can figure things out on your own even with your very limited JavaScript understanding.</li>
+
+<br>
+
+<li>If your understanding of JavaScript is too limited for you to implement what you want to create then look it up online! Research exactly what you want to do. When you have the HTML, CSS and JavaScript code from a source you want to emulate then the fun but hard part begins.</li>
+
+</ol>
+
+<br>
+
+
+<p>I already learned about simple functions in JavaScript and I just finished learning about Conditionals (If, else, else if). But this knowledge was not enough. Yes I do have to keep learning more JavaScript of course. But another way of learning to code is by seeing how another source does it and then trying to "understand" how they did it and why they did it in the way that they did it. You'll learn through trial and error when you start testing out the code through your text editor...just like I did.</p>
+
+
+<p>I wanted to create a very simple game where you have to pick the correct robot. Pick the wrong robot and you will doom the entire human race to extinction. I wanted for the user to be able to do the following things:</p>
+
+<br>
+
+<ol>
+
+<li>Click on the robot of their choice.</li>
+
+<br>
+
+<li>The clicking on their choice robot opens up a window within the page they are currently on.</li>
+
+<br>
+
+<li>The popup window displays an animated gif that contains a caption telling the user if they've made the right or wrong choice in their choice of robot.</li>
+
+<br>
+
+<li>The user can simply exit out of the popup window easily.</li>
+
+<br>
+
+<li>After the user exits from the popup window they can go back and choose another robot and see a new popup animated gif with a new caption message.</li>
+
+</ol>
+
+<br>
+
+
+
+<p>This is the source code I decided in the end to go with:</p>
+
+
+<div id ="w3schools">
+
+<p><a href="http://www.w3schools.com/howto/howto_js_lightbox.asp" target="_blank"><img src="images/w3schools.png" alt="w3schools Website" width ="300" height ="225" /></a></p>
+
+
+</div><!--w3schools-->
+
+
+
+
+<p>After adding the source code to my text editor and testing the code on my browser I noticed there were many things I didn't want and or needed. So I started to tweak the source code, deleting things here and adding things there, then testing it on my browser to make sure I didn't mess up or break anything.</p>
+
+<p>Through much trial and error I finally brought my vision to life. Going through this process allowed me to learn the following:</p>
+
+<br>
+
+
+<ol>
+
+<li>It helped me to see how I needed to organize the HTML code so it can reflect the new JavaScript code and make it work. This was easy enough for me to do because I'm pretty familiar with HTML. But it helped me to see how the three robot pictures needed to be laid out in the flow of the page the way I had envisioned. And it also helped me to see which parts of the source code I needed to delete and which parts I needed to replace with my own code. Easy enough. Of course, this happened after playing around with the code and seeing what this code here does, what happens if you delete this part of the code over there, oh no this bit of code doesn't work let me add it back, let's see what happens if I change this, yes it worked, etc...</li>
+
+<br>
+
+<li>It helped me to see how I needed to organize my CSS code. Again, I used the same process as above. Delete things here, change things there, etc...</li>
+
+<br>
+
+<li>It helped me to see the bits of JavaScript code I was not too familiar with where I could at least try to understand it at the basic and rudimentary level.</li>
+
+
+</ol>
+
+<br>
+
+
+<p>The good news? I had a vision (a very simple one) and managed to bring it to life. The bad news? I have a LONG way to go in my learning process. But I sure did learn a lot with this simple robot game.</p>
+
+<p>Since I learned how to create a simple robot game and it worked (after much trial and error) the way I wanted it to you know what that means right? It's time for the Woohoo Dance!</p>
+
+
+
+<div id="twodancingrobots">
+
+<p><img src="images/dancingrobots.gif" alt="Dancing Robots" width="338" height="252" /></p>
+
+</div><!--twodancingrobots-->
+
+  
+
+
+
+
+
+</a><!--Paragraph Not be a link-->
+
+
+
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+</div><!--backtotop-->
+
+
+
+</div><!--MainParagraph Div-->
+
+
+
+
+
+</div><!--OuterContainer-->
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+
+
+</html>
+
