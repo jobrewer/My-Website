@@ -136,7 +136,7 @@
 #backtotop {
 	position: absolute;
 	width: 200px;
-	top: 2600px;
+	top: 2800px;
 }
 
 
@@ -1695,6 +1695,88 @@
 
 
 
+/*************************************/
+/*Container 19*/
+
+
+
+
+.container19 {
+  position: relative;
+  width: 48%;
+  /*I am going to try to move the image inside the container left and top. It worked!*/
+  left: 0px;
+  top: -2520px;
+}
+
+
+.image19 {
+  display: block;
+  width: 70%; /*This changed the size of the actual picture without having to put pixels in the HTMl of width and height*/
+  height: auto;
+}
+
+
+.overlay19 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160%;
+  width: 80%; /*This changed the size of the purple screen*/
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #846483;
+}
+
+
+.container19:hover .overlay19 {
+  opacity: 1;
+}
+
+
+.text19 {
+  color: white;
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 15%; /*This moved the actual letters of the word installation up*/
+  left: 46%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.car1 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%; /*This moved the actual letters of the word installation up*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.car2 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 75%; /*This moved the actual letters of the word installation up*/
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
 
 </style>
 
@@ -2319,6 +2401,31 @@
 
 
 
+<!--Container 19-->
+
+
+<div class="container19">
+  <img src="images/antique-car-clipart.jpg" alt="Antique Car Clipart" class="image19">
+  <div class="overlay19">
+    <div class="text19">Speed Car Game</div>
+
+    <div class="car1">How fast do you usually drive? Find out with this game...</div>
+
+    <div class="car2">
+    <a href="../speed-car-game.html" target="_blank">See more...</a>
+   </div>
+
+
+  </div>
+</div>
+
+
+<!--End of Container 19-->
+
+
+
+
+
 
 <div id="backtotop">
 <p><a href="#top">Back To Top</a></p>
@@ -2342,4 +2449,5 @@
 </body>
 
 </html>
+
 
