@@ -1,1 +1,476 @@
+<!--This is the speed-car-game.html code for my Portfolio Website-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Jo DeMarco Personal Portfolio">
+
+
+
+<title>Speed Car Game</title>
+
+
+<link rel="stylesheet" href="index.css" >
+
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+<!--INTERNAL CSS-->
+
+<style type="text/css">
+
+#AllProjects {
+	position: relative;
+	width: 900px;
+	height: 1300px;
+	font-size: 1.4em;
+	font-family: Verdana, Geneva, Arial, Sans-serif;
+	text-align: left;
+	padding: 20px;
+	left: 0px;
+	top: 160px;
+}
+
+
+
+
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#project {
+	position: relative;
+	width: 800px;
+	top: 160px;
+}
+
+
+
+#project2 {
+	position: relative;
+	width: 800px;
+	top: 0px;
+	left:-50px;
+}
+
+
+.secondH2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 3em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#AllProjects a:link {
+	color: #185D8E;
+	text-decoration: none;
+}
+
+
+
+#AllProjects a:visited {
+	color: #185D8E;
+}
+
+
+
+#AllProjects a:hover {
+	color: #FFA3D4;
+}
+
+
+
+
+
+#MainParagraph {
+	position: relative;
+	width: 800px;
+	top: 140px;
+}
+
+
+
+
+#conditionalpic {
+	position: relative;
+	width: 700px;	
+}
+
+
+
+#conditionalpic {
+  position: relative;
+  width: 700px; 
+}
+
+
+
+
+#cardance {
+  position: relative;
+  width: 700px;
+}
+
+
+
+
+
+</style>
+
+<!--INTERNAL CSS-->
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<!--OuterContainer that contains everything-->
+<div id="OuterContainer">
+
+
+
+<!--Fixed Positioning for Name and Menu-->
+
+<div id="fixed">
+
+
+
+<div id="name">
+<h1><a href="http://www.jodemarco.com">Jo DeMarco</a></h1>
+</div><!--name-->
+
+
+
+<div id="menu">
+<ul>
+
+
+
+<li class="menubuttons"><a href="/view-projects.html">View Projects</a></li>
+
+
+
+<li class="menubuttons"><a href="/contact.html">Contact Me</a></li>
+
+
+
+</ul>
+
+
+
+<div id="Git">
+
+<p><a href="https://github.com/jodemarco" target="_blank"><img src="images/github.gif" width="51" height="54" alt="GitHub"></a></p>
+
+<!--Git-->
+
+
+
+</div><!--menu-->
+
+
+
+
+</div><!--Fixed Positioning for Name and Menu-->
+
+
+
+
+<div id="project">
+<h2>Speed Car Game</h2>
+
+</div><!--project-->
+
+
+
+
+
+
+<!--MainParagraph Div-->
+
+<a class="noDecoration" href="#">
+
+<div id="MainParagraph">
+
+
+
+
+<!--Paragraph Not be a link-->
+<a name="WhateverNameYouWant">
+
+
+
+
+<p>How fast are you going?</p>
+
+<br>
+
+
+<div id="SpeedTest"></div>
+
+<br>
+
+<div id="SpeedPicture">
+<p><img src="images/car.jpg" /></p>
+</div>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<div id="project2">
+
+<h2 class="secondH2">How I Did It</h2>
+
+</div>
+
+
+
+<p>Well this was most definitely an interesting project for sure!  I learned a few things through trial and error. I wanted to see if I could figure things out on my own again and then if I got stuck use Google to find the right answers.</p>
+
+<p>I wanted my simple JavaScript game to do the following:</p>
+
+<br>
+
+<ol>
+<li>User is prompted to input their speed in terms of how fast they like to drive.</li>
+
+<br>
+
+<li>Once they input their speed the prompt box disappears and tells them exactly how fast they're going and if they're going too fast, too slow, or following the speed limit, followed by either a "Slow down" or "Good job for going the speed limit" or "Pick up your speed" message.</li>
+
+<br>
+
+<li>User will also see based on the speed they gave in the user prompt window a gif pertaining to the corresponding speed they gave.</li>
+
+<br>
+
+<li>User can refresh the page and try all different kinds of speed numbers to get different results.</li>
+</ol>
+
+<br>
+
+<p>One of the issues I ran into was the following. I originally had the following conditional statements in the following order:</p>
+
+<ul>
+<li>if</li>
+
+<br>
+
+<li>else if</li>
+
+<br>
+
+<li>else if</li>
+
+<br>
+
+<li>else</li>
+</ul>
+
+<br>
+
+
+<p>For some reason when I had the "if", then "else if", then another "else if", and yet another "else" statement it would only read the "if" condition and the first "else if" statement. It wouldn't even read any conditions after that, even if the other conditions were "True" and the first "if" and second "else if" were "False."</p>
+
+<p>I'm still trying to figure out why it was ignoring all the other conditions after testing each of them. I decided, however, to do something a bit different. What if I were to instead separate both of the "else if" statements and get rid of the "else" statement? The "are_you_speeding" variable from the user prompt will remain the same so nothing would technically be changing. I decided to try it out and voila! It actually worked!</p>
+
+
+
+
+
+<div id="conditionalpic">
+
+<p><img src="images/conditional.png" alt="Screenshot" width="687" height="681" /></p>
+
+</div><!--conditionalpic-->
+
+
+
+
+<p>Another thing that also happened was that the images that corresponded with the user prompt wouldn't load! The reason I was having a hard time was because when I was researching the "innerHTML" property I knew how to include the corresponding text based on the user input from the prompt. But I had no idea how to add an image to the "innerHTML" property.</p>
+
+<p>So I started to experiment to see if I could write  the same conditional statements in the same way like I had done but this time instead of adding the text, like for example, "You are driving at 85 miles an hour! You are speeding. Slow down!" I would instead add an image to the "innerHTML" statement.</p>
+
+<p>As you can see, if I followed the "innerHTML" exactly you'll notice there are no "< >" brackets. If I wanted to add an image I would also have to be extremely careful with the quotation marks since the "src" attribute already contains double quotation marks. I also added a new placeholder for my html div as well. The text placeholder for my html div tag says "SpeedTest" and the image placeholder for my other html div tag says "SpeedPicture." I played around with all of this, testing and re-testing the browser to reflect the new changes from my text editor until it finally worked! Yay!</p>
+
+
+
+
+<div id="conditionalpic2">
+
+<p><img src="images/conditional2.png" alt="Screenshot" width="687" height="681" /></p>
+
+</div><!--conditionalpic2-->
+
+
+
+
+
+<p>Since I created a simple speeding car game using some new elements I learned such as "innerHTML" and "document.getElementById" along with how to make conditional statements a little bit more interactive based on user input from the prompt window you know what that means right? It's time for the Woohoo Dance!</p>
+
+
+
+<div id="cardance">
+
+<p><img src="images/car-dance.gif" alt="Dancing In Car" width="500" height="281" /></p>
+
+</div><!--cardance-->
+
+
+
+
+
+
+
+
+</a><!--Paragraph Not be a link-->
+
+
+
+
+
+<br>
+
+<div id="backtotop">
+<p><a href="#top">Back To Top</a></p>
+
+</div><!--backtotop-->
+
+
+
+</div><!--MainParagraph Div-->
+
+
+
+
+
+</div><!--OuterContainer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+
+alert("When driving a car do you feel the need to:\n\n 1. Speed\n\n 2. Follow the speed limit rules\n\n 3. Go Granny slow\n\n Let's find out with this game!");
+
+
+
+
+var are_you_speeding = prompt("How fast do you usually drive? Please put in a number.");
+
+if (are_you_speeding >= 57) {
+    document.getElementById("SpeedTest").innerHTML =
+    "You are driving at " + are_you_speeding + " miles an hour! You are speeding. Slow down!";
+  }
+
+else if (are_you_speeding <= 57) {
+    document.getElementById("SpeedTest").innerHTML =
+    "You are driving at " + are_you_speeding + " miles an hour! You are following the speed limit. Good Job!";
+  }
+
+if (are_you_speeding <= 25) {
+    document.getElementById("SpeedTest").innerHTML =
+    "You are driving at " + are_you_speeding + " miles an hour! You are going Granny speed. Speed it up will you!";
+  }
+
+
+
+
+
+/*
+These are the picture images I used to go along with the user prompt variable are_you_speeding
+*/
+
+
+if (are_you_speeding >= 57) {
+    document.getElementById("SpeedPicture").innerHTML =
+    '<img src="images/car.gif" alt="Car Speeding" width="680" height="382">';
+  }
+
+
+else if (are_you_speeding <= 57) {
+    document.getElementById("SpeedPicture").innerHTML =
+    '<img src="images/ventura.gif" alt="Ace Ventura Driving" width="426" height="240">';
+  }
+
+
+
+if (are_you_speeding <= 25) {
+    document.getElementById("SpeedPicture").innerHTML =
+    '<img src="images/old-lady-driving.gif" alt="Old Woman Driving Slow" width="500" height="213" >';
+  }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
 
