@@ -1853,6 +1853,92 @@
 
 
 
+	
+	
+	
+/*************************************/
+/*Container 21*/
+
+
+
+
+.container21 {
+  position: relative;
+  width: 48%;
+  /*I am going to try to move the image inside the container left and top. It worked!*/
+  left: 645px;
+  top: -4700px;
+}
+
+
+.image21 {
+  display: block;
+  width: 50%; /*This changed the size of the actual picture without having to put pixels in the HTMl of width and height*/
+  height: auto;
+}
+
+
+.overlay21 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%; /*This changed the size of the purple screen*/
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #846483;
+}
+
+
+.container21:hover .overlay21 {
+  opacity: 1;
+}
+
+
+.text21 {
+  color: white;
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 20%; /*This moved the actual letters of the word installation up*/
+  left: 46%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.holiday-database1 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%; /*This moved the actual letters of the word installation up*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.holiday-database2 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 75%; /*This moved the actual letters of the word installation up*/
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+	
+	
+	
+	
+	
 
 
 </style>
@@ -2523,6 +2609,30 @@
 
 
 <!--End of Container 20-->
+	
+	
+	
+	
+<!--Container 21-->
+
+
+<div class="container21">
+  <img src="images/hot-cocoa.jpg" alt="Hot Cocoa Clipart" class="image21">
+  <div class="overlay21">
+    <div class="text21">Holiday Database</div>
+
+    <div class="holiday-database1">Interact with a simple holiday database system...</div>
+
+    <div class="holiday-database2">
+    <a href="../holiday-database.html" target="_blank">See more...</a>
+   </div>
+
+
+  </div>
+</div>
+
+
+<!--End of Container 21-->	
 
 
 
