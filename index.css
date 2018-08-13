@@ -1,8 +1,9 @@
 /*****This is the index.css code for the index.html page for my Portfolio Website*****/
 
 
+
 body {
-  /*background-image: url(images/fashion2.jpg);*/
+  /*background-image: url(images/cyborg-girl.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;
@@ -17,7 +18,7 @@ body {
 #empty {
 	position: relative;
 	width: 1000px;
-	top: -30px;
+	top: 70px;
 	left: -290px;	
 }
 
@@ -35,21 +36,36 @@ p {
 h1 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 5em;
-	color: #ffffff;
+	color: #000000;
 	font-weight: bold;
 }
 
 
 
 
+h6 {
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size: 2em;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+
 
 #name {
 	position: relative;
-	top: -60px;
+	top: -50px;
 	left: 20px;
-	padding: 13px;
-	margin: 13px;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: 0px;
+	margin-right: 13px;
+    width: 160px;
+    height: -60px;
 }
+
+
 
 
 
@@ -92,6 +108,23 @@ h1 {
 
 
 
+#createdname a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+#createdname a:visited {
+	color: #000000;
+}
+
+
+
+#createdname a:hover {
+	color: #185D8E;
+}
+
+
 /********LISTS OL/UL*********************/
 
 
@@ -128,7 +161,7 @@ h1 {
 
 
 #backtotop a:hover {
-	color: #FFA3D4;
+	color: #878f9a;
 }
 
 
@@ -152,7 +185,7 @@ h1 {
 	color: #000000;
 	position: absolute;
 	left: 300px;
-	top: 30px;	
+	top: -30px;	
 	font-weight: bold;
 }
 
@@ -179,7 +212,7 @@ h1 {
 
 
 #menu a:link {
-	color: #185D8E;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -194,7 +227,7 @@ h1 {
 
 
 #menu a:hover {
-	color: #FFA3D4;
+	color: #185D8E;
 }
 
 
@@ -227,6 +260,20 @@ li.menubuttons {
 
 
 
+#createdname {
+	position: relative;
+	top: -920px;
+	left: 13px;
+	padding: 0px;
+	margin: 0px;
+	width: 280px;
+	height: -160px;
+}
+
+
+
+
+
 
 /*******MAIN PARAGRAPH CONTENT******/
 
@@ -241,7 +288,7 @@ li.menubuttons {
 	padding: 20px;
 	left: 0px;
 	margin: 20px;
-	top: 540px;
+	top: 640px;
 	color: #000000;
     
 
@@ -253,6 +300,27 @@ li.menubuttons {
 
 
 /**************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
