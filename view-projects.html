@@ -2,8 +2,7 @@
 
 
 
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -146,7 +145,7 @@ h6 {
 #backtotop {
 	position: absolute;
 	width: 200px;
-	top: 2800px;
+	top: 3100px;
 }
 
 
@@ -194,7 +193,7 @@ h6 {
 
 #createdname {
   position: relative;
-  top: -5910px;
+  top: -6190px;
   left: -15px;
   padding: 0px;
   margin: 0px;
@@ -1501,6 +1500,88 @@ h6 {
 
 
 
+/*************************************/
+/*Container 22*/
+
+
+
+
+.container22 {
+  position: relative;
+  width: 48%;
+  /*I am going to try to move the image inside the container left and top. It worked!*/
+  left: 70px;
+  top: -2200px;
+}
+
+
+.image22 {
+  display: block;
+  width: 52%; /*This changed the size of the actual picture without having to put pixels in the HTMl of width and height*/
+  height: auto;
+}
+
+
+.overlay22 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 57%; /*This changed the size of the purple screen*/
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #846483;
+}
+
+
+.container22:hover .overlay22 {
+  opacity: 1;
+}
+
+
+.text22 {
+  color: white;
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 20%; /*This moved the actual letters of the word installation up*/
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.cyberlock1 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 55%; /*This moved the actual letters of the word installation up*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.cyberlock2 {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 80%; /*This moved the actual letters of the word installation up*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
 
 
 /*************************************/
@@ -1835,7 +1916,7 @@ h6 {
   width: 48%;
   /*I am going to try to move the image inside the container left and top. It worked!*/
   left: 345px;
-  top: -4490px;
+  top: -4770px;
 }
 
 
@@ -1916,7 +1997,7 @@ h6 {
   width: 48%;
   /*I am going to try to move the image inside the container left and top. It worked!*/
   left: 645px;
-  top: -4700px;
+  top: -4970px;
 }
 
 
@@ -2516,6 +2597,36 @@ h6 {
 
 
 <!--End of Container 15-->
+
+
+
+
+
+
+<!--Container 22-->
+
+
+<div class="container22">
+  <img src="images/cyberlock.jpg" alt="Cyber Lock Icon" class="image22">
+  <div class="overlay22">
+    <div class="text22">SSl Switch</div>
+
+    <div class="cyberlock1">I knew it was coming. The Google crackdown...</div>
+
+    <div class="cyberlock2">
+    <a href="../secure-socket-layer.html" target="_blank">See more...</a>
+   </div>
+
+
+  </div>
+</div>
+
+
+
+<!--End of Container 22-->
+
+
+
 
 
 
